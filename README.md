@@ -1,7 +1,7 @@
 
 ### Десктопный low-code редактор ассемблера 8086
 
-<video controls src="for-readme/video1.mp4" title="video1"></video>
+![gifka](for-readme/video1.gif)
 
 ### Цель проекта
 
