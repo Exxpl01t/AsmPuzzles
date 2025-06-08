@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Blockly CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- js-dos style sheet -->
+    <link rel="stylesheet" href="node_modules/js-dos/dist/js-dos.css">
+    <!-- js-dos -->
+    <script src="node_modules/js-dos/dist/js-dos.js"></script>
+    <title>Assembly Puzzles</title>
+  </head>
+  <body>
+
+    <div id ="blockly">
+      <div id="container">
+        <div id="buttonPanel">
+          <button id="runCodeButton">Запуск</button>
+          <button id="debugButton">Отладка</button>
+          <h3 id="heading">Блоки</h3>
+          <button class="toolbox-btn" data-toolbox="sections">Секции</button>
+          <button class="toolbox-btn" data-toolbox="operands">Операнды</button>
+          <button class="toolbox-btn" data-toolbox="mov_instructions">Перемещение</button>
+          <button class="toolbox-btn" data-toolbox="logic">Логические</button>
+          <button class="toolbox-btn" data-toolbox="arithmetics">Арифметика</button>
+          <button class="toolbox-btn" data-toolbox="jumps">Прыжки</button>
+          <button class="toolbox-btn" data-toolbox="stack">Стек</button>
+          <button class="toolbox-btn" data-toolbox="loops">Циклы</button>
+          <button class="toolbox-btn" data-toolbox="flags">Флаги</button>
+          <button class="toolbox-btn" data-toolbox="rep">Повторы</button>
+          <button class="toolbox-btn" data-toolbox="shifts">Сдвиги</button>
+          <button class="toolbox-btn" data-toolbox="misc">Прочее</button>
+        </div>
+        <div id="blocklyDiv"></div>
+      </div>
+      <!-- Blockly scripts -->
+      <script src="node_modules/blockly/blockly.min.js"></script>
+    </div>
+
+  
+    <div id="dosbox" style="display: none;">
+      <button id="closeButton">В редактор</button>
+      <div id="dos"></div>
+    </div>
+    
+    <!-- main work done here -->
+    <script src="renderer.js"></script>
+    
+  </body>
+</html>
